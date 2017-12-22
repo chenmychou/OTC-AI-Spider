@@ -32,7 +32,7 @@ const fetchEosPrice = async () => {
 const main = async () => {
     while (true) {
         await fetchEosPrice()
-        await sleep(60000)
+        await sleep(40000)
     }
 }
 
