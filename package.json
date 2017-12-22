@@ -1,0 +1,28 @@
+{
+  "name": "otc",
+  "version": "1.0.0",
+  "description": "otc-spider",
+  "main": "index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F-E-OS/OTC-AI-Spider.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "eos",
+    "otcbtc"
+  ],
+  "author": "onion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/F-E-OS/OTC-AI-Spider/issues"
+  },
+  "homepage": "https://github.com/F-E-OS/OTC-AI-Spider#readme",
+  "dependencies": {
+    "moment": "^2.20.1",
+    "puppeteer": "^0.13.0"
+  }
+}
