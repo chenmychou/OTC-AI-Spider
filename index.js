@@ -13,7 +13,7 @@ const fetchEosPrice = async () => {
     const page = await browser.newPage()
     await page.goto(OTC)
 
-    await sleep(1000)
+    await sleep(5000)
 
     let result = await page.evaluate(() =>  {
         const nodeList = [...document.querySelectorAll('ul.list-content .price')].slice(0, 5)
@@ -34,7 +34,7 @@ const fetchEosPrice = async () => {
 const main = async () => {
     while (true) {
         await fetchEosPrice()
-        await sleep(1000)
+        await sleep(60000)
     }
 }
 
