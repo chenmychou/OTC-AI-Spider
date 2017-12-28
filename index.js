@@ -31,8 +31,13 @@ const fetchEosPrice = async () => {
 
 const main = async () => {
     while (true) {
-        await fetchEosPrice()
-        await sleep(40000)
+        try {
+            await fetchEosPrice()
+            await sleep(40000)
+        } catch (e) {
+            console.log(e)
+            continue
+        }
     }
 }
 
